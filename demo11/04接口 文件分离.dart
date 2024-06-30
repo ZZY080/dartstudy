@@ -20,18 +20,15 @@ mysql  mssql  mongodb三个类里面都有同样的方法
 
 */
 
-// import 'lib/Mysql.dart';
-import 'lib/MsSql.dart';
+import 'lib/Mysql.dart';
+// import 'lib/MsSql.dart';
 
 main() {
+  Mysql mysql = new Mysql();
 
-  // Mysql mysql=new Mysql('xxxxxx');
+  mysql.add('1243214');
 
-  // mysql.add('1243214');
-
-  MsSql mssql=new MsSql();
-  mssql.uri='127.0.0.1';
-  mssql.add('增加的数据');
-
-  
+  // MsSql mssql=new MsSql();
+  // mssql.uri='127.0.0.1';
+  // mssql.add('增加的数据');
 }

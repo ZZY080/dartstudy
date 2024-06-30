@@ -22,7 +22,8 @@ print(l.getList());
 */
 
 class MyList<T> {
-  List list = <T>[];
+  // List list = <T>[];
+  List<T> list = [];
   void add(T value) {
     this.list.add(value);
   }

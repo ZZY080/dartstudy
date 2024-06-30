@@ -20,16 +20,15 @@ mysql  mssql  mongodb三个类里面都有同样的方法
 
 */
 
-
-abstract class Db{   //当做接口   接口：就是约定 、规范
-    late String uri;      //数据库的链接地址
-    add(String data);
-    save();
-    delete();
+abstract class Db {
+  //当做接口   接口：就是约定 、规范
+  late String uri; //数据库的链接地址
+  add(String data);
+  save();
+  delete();
 }
 
-class Mysql implements Db{
-  
+class Mysql implements Db {
   @override
   String uri;
 
@@ -38,7 +37,7 @@ class Mysql implements Db{
   @override
   add(data) {
     // TODO: implement add
-    print('这是mysql的add方法'+data);
+    print('这是mysql的add方法' + data);
   }
 
   @override
@@ -52,19 +51,16 @@ class Mysql implements Db{
     // TODO: implement save
     return null;
   }
-  remove(){
-      
-  }
 
-  
+  remove() {}
 }
 
-class MsSql implements Db{
+class MsSql implements Db {
   @override
   late String uri;
   @override
   add(String data) {
-    print('这是mssql的add方法'+data);
+    print('这是mssql的add方法' + data);
   }
 
   @override
@@ -78,18 +74,10 @@ class MsSql implements Db{
     // TODO: implement save
     return null;
   }
-
-
 }
 
 main() {
-
-  Mysql mysql=new Mysql('xxxxxx');
+  Mysql mysql = new Mysql('xxxxxx');
 
   mysql.add('1243214');
-
-  
-
-
-  
 }

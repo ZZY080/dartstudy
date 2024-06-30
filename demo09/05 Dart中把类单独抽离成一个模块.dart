@@ -1,8 +1,7 @@
-import 'lib/Person.dart';
+import "lib/Person.dart";
 
-void main(){
-
-  Person p1=new Person.setInfo('李四1',30);
-  p1.printInfo(); 
-
+void main() {
+  Person p1 = new Person.setInfo('李四1', 30);
+  // Person p1 = new Person.now();
+  p1.printInfo();
 }
