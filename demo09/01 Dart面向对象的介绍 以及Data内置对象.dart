@@ -17,27 +17,19 @@ Dart是一门使用类和单继承的面向对象语言，所有的对象都是�
 
 */
 
-void main(){    
-    
-    // List list=new List();  //最新版本的dart中已没法使用 
-    // list.isEmpty;
-    // list.add('香蕉');
-    // list.add('香蕉1');
+void main() {
+  // List list=new List();  //最新版本的dart中已没法使用
+  // list.isEmpty;
+  // list.add('香蕉');
+  // list.add('香蕉1');
 
+  Map m = new Map();
+  m["username"] = "张三";
+  m.addAll({"age": 20});
+  m.isEmpty;
 
-
-
-
-    Map m=new Map();
-    m["username"]="张三";
-    m.addAll({"age":20});
-    m.isEmpty;
-
-
-
-    Object a=123;
-    Object v=true;
-    print(a);
-    print(v);
-
+  Object a = 123;
+  Object v = true;
+  print(a);
+  print(v);
 }

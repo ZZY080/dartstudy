@@ -51,4 +51,6 @@ Dart的命名规则：
 */
 void main() {
   final a;
+  a = 1;
+  print(a);
 }

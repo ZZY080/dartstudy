@@ -14,25 +14,19 @@ Dart的命名规则：
 
 */
 
+void main() {
+  var str1 = '2134214';
 
-void main(){
+  //var 2str='xxx';   //错误
+  // var if='124214';  //错误
 
-    var str1='2134214';
+  //变量的名字是区分大小写的
+  var age = 20;
+  var Age = 30;
 
-    //var 2str='xxx';   //错误
-    // var if='124214';  //错误
+  print(age);
+  print(Age);
 
-
-    //变量的名字是区分大小写的
-    var age=20;
-    var Age=30;
-
-    print(age);
-    print(Age);
-
-    
-
-    var price=12;
-    var name=124;
-
+  var price = 12;
+  var name = 124;
 }

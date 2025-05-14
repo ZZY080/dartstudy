@@ -23,16 +23,12 @@ main() {
   //  Person p=new Person('张三', 20);
   //  p?.printInfo();   //已被最新的dart废弃 了解
 
-
-
-  Person p=new Person('张三', 20);
-  if(p is Person){
-      p.name="李四";
+  Person p = new Person('张三', 20);
+  if (p is Person) {
+    p.name = "李四";
   }
   p.printInfo();
   print(p is Object);
-
-
 
   // var p1;
   // p1='';
@@ -40,17 +36,11 @@ main() {
   // p1.printInfo();
   // (p1 as Person).printInfo();
 
-
-
-
   //  Person p1=new Person('张三1', 20);
   //  p1.printInfo();
   //  p1.name='张三222';
   //  p1.age=40;
   //  p1.printInfo();
-
-
-
 
   Person p1 = new Person('张三1', 20);
   p1.printInfo();

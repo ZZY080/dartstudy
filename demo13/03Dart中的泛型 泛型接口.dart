@@ -35,6 +35,7 @@ class FileCache<T> implements Cache<T> {
   getByKey(String key) {
     return null;
   }
+
   @override
   void setByKey(String key, T value) {
     print("我是文件缓存 把key=${key}  value=${value}的数据写入到了文件中");
@@ -46,6 +47,7 @@ class MemoryCache<T> implements Cache<T> {
   getByKey(String key) {
     return null;
   }
+
   @override
   void setByKey(String key, T value) {
     print("我是内存缓存 把key=${key}  value=${value} -写入到了内存中");

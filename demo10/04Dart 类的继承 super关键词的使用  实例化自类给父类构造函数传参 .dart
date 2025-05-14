@@ -10,27 +10,24 @@ Dart中的类的继承：
 
 class Person {
   late String name;
-  late num age; 
-  Person(this.name,this.age);
+  late num age;
+  Person(this.name, this.age);
   void printInfo() {
-    print("${this.name}---${this.age}");  
+    print("${this.name}---${this.age}");
   }
 }
-class Web extends Person{
-  Web(String name, num age) : super(name, age){    
-  }  
+
+class Web extends Person {
+  Web(String name, num age) : super(name, age) {}
 }
 
-main(){ 
-
+main() {
   // Person p=new Person('李四',20);
   // p.printInfo();
 
   // Person p1=new Person('张三',20);
   // p1.printInfo();
 
-  Web w=new Web('张三', 12);
+  Web w = new Web('张三', 12);
   w.printInfo();
-
-
 }

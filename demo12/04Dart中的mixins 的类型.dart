@@ -5,35 +5,28 @@ mixins的实例类型是什么？
 
 */
 
-
-
-class A {
-  String info="this is A";
-  void printA(){
+mixin A {
+  String info = "this is A";
+  void printA() {
     print("A");
   }
 }
 
-class B {
-  void printB(){
+mixin class B {
+  void printB() {
     print("B");
   }
 }
 
-class C with A,B{
-  
-}
+class C with A, B {}
 
-void main(){  
-   var c=new C();  
-   
-  print(c is C);    //true
-  print(c is A);    //true
-  print(c is B);   //true
+void main() {
+  var c = new C();
 
+  print(c is C); //true
+  print(c is A); //true
+  print(c is B); //true
 
   // var a=new A();
   // print(a is Object);
-
-
 }
