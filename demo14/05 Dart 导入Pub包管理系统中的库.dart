@@ -29,9 +29,10 @@ main() async {
   var uri = new Uri.http('news-at.zhihu.com', '/api/3/stories/latest');
   //   // Await the http get response, then decode the json-formatted responce.
   var response = await http.get(uri);
+  print(response.body);
   if (response.statusCode == 200) {
     var jsonResponse = convert.jsonDecode(response.body);
-    print(jsonResponse);
+    // print(jsonResponse);
   } else {
     print("Request failed with status: ${response.statusCode}.");
   }
